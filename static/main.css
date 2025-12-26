@@ -1,0 +1,150 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
+    min-height: 100vh;
+    color: #f5c518;
+    /* Batman yellow */
+}
+
+/* Main container */
+.content {
+    width: 80%;
+    max-width: 900px;
+    margin: 70px auto;
+    background: #0b0b0b;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(245, 197, 24, 0.15);
+    border: 1px solid rgba(245, 197, 24, 0.2);
+}
+
+/* Heading */
+.content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    color: #f5c518;
+    text-transform: uppercase;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    border: #f5c518 1px solid;
+
+}
+
+table th,
+table td {
+    padding: 15px 18px;
+    text-align: center;
+    border: #f5c518 1px solid;
+}
+
+/* Table header */
+table th {
+    background: #f5c518;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+}
+
+/* Table rows */
+table tr {
+    border-bottom: 1px solid rgba(245, 197, 24, 0.15);
+    border: #f5c518 1px solid;
+
+}
+
+table tr:nth-child(even) {
+    background: #0f0f0f;
+}
+
+table tr:hover {
+    background: rgba(245, 197, 24, 0.08);
+    transition: background 0.3s ease;
+}
+
+/* Action links */
+table a {
+    color: #f5c518;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: #ffd84d;
+}
+
+/* Form */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+/* Input */
+form input[type="text"] {
+    width: 70%;
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(245, 197, 24, 0.4);
+    background: #000;
+    color: #f5c518;
+    font-size: 1rem;
+    outline: none;
+}
+
+form input[type="text"]::placeholder {
+    color: rgba(245, 197, 24, 0.6);
+}
+
+/* Button */
+form input[type="submit"] {
+    padding: 13px 22px;
+    border-radius: 8px;
+    border: none;
+    background: #f5c518;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(245, 197, 24, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+    }
+}
